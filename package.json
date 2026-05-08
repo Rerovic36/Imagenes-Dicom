@@ -1,0 +1,19 @@
+{
+  "name": "imagenes",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Rerovic36",
+  "license": "ISC",
+  "description": "",
+  "type":"module",
+  "dependencies": {
+    "dayjs": "^1.11.13",
+    "express": "^4.21.0",
+    "jsonwebtoken": "^9.0.2",
+    "mysql2": "^3.11.3",
+    "pg": "^8.13.0"
+  }
+}

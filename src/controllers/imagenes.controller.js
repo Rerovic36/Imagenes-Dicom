@@ -118,7 +118,11 @@ export const paciente = async (req, res) =>{
     res.send(results)
 }
 
-
+export const login = async (req, res) =>{
+    const id_usuario = req.body.id
+    const clave_usuario = req.body.pass
+    const nombre_usuario = req.body.user
+}
 
 
 

@@ -114,15 +114,10 @@ export const estudio_detallado = async (req, res) =>{
 
 export const paciente = async (req, res) =>{
     const codigo = req.params.codigo
-    const [results, fields] = await connection.query(`SELECT * FROM paciente WHERE id_paciente = ${codigo}`)    
+    const [results, fields] = await connection.query("SELECT * FROM paciente WHERE id_paciente = ?", codigo)    
     res.send(results)
 }
 
-export const login = async (req, res) =>{
-    const id_usuario = req.body.id
-    const clave_usuario = req.body.pass
-    const nombre_usuario = req.body.user
-}
 
 
 
